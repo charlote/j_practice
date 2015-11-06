@@ -1,0 +1,8 @@
+{
+    "name": "LiaoYW",
+    "version": "0.0.0",
+    "description": "a simple http server",
+    "dependencies": {
+        "formidable": "~1.0.17"
+    }
+}
