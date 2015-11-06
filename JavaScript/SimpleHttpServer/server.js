@@ -10,16 +10,9 @@ function start(route, handle){
             var postData = "";
             var pathname = url.parse(request.url).pathname;         //get the http request URL
             console.log("Request for "+pathname+" received.");
-
-            request.setEncoding("utf8");            //set UTF-8 as the data code-form
-            request.addListener("data", function(postDataChunk){    //register "data" listener which collect all data chunk in 'postData' 
-                postData += postDataChunk;
-                console.log("Received POST data chunk '"+postDataChunk+"'");
-                });
-            request.addListener("end", function(){                  //router will be touched when the data collection finish and only trig one time
-                //add the router which respond to different URL, and pass the URL related handle function to router, and pass the response function for the end of handle 
-                route(pathname, handle, response, postData);
-                });
+            //add the router which respond to different URL, and pass the URL related handle function to router, and pass the response function for the end of handle 
+            route(pathname, handle, response, request);             //pass request(obj) to router(remove request.setEncoding due to node-formidable will handle the code data-type)
+            
             }).listen(8888);
     console.log("Server is started.");
 }
