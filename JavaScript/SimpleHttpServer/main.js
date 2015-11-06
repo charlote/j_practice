@@ -8,5 +8,6 @@ var handle = {}
 handle["/"] = handlers.root;
 handle["/start"] = handlers.start;
 handle["/upload"] = handlers.upload;
+handle["/show"] = handlers.show;
 
 server.start(router.route, handle);         //start server with router, and pass the handle function to router
