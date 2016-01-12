@@ -6,6 +6,10 @@
 About the coursera: 
     This course will introduce computer programming in C. We will cover basic operations about computer, then move on to how to write computer program in a language called C. Various C concepts will be introduced.
 
+./learn_C_the_hard_way
+* Description: the homework of Learn C The Hard Way
+About the websit:
+    The purpose of this book is to get you strong enough in C that you well be able to write your own software in it, or modify someone else's code.
 
 
 
