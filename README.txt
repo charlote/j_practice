@@ -1,4 +1,14 @@
 # j_practice
+
+###### C ######
+./coursera_ntu
+* Description: the homework of Computer Programming in C
+About the coursera: 
+    This course will introduce computer programming in C. We will cover basic operations about computer, then move on to how to write computer program in a language called C. Various C concepts will be introduced.
+
+
+
+
 ###### JAVA ######
 
 
